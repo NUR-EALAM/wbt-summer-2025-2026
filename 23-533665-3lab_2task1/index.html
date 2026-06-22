@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Student Registration Form Using HTML</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="fname">Full Name:</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="Enter your full name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="SID">Student ID:</label></td>
+                    <td><input type="text" name="SID" id="SID" placeholder="Enter your Student ID" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="text" name="email" id="email" placeholder="Enter your email address" required></td>
+                </tr>
+                <tr>
+                    <td><label for="PhnNum">Phone Number:</label></td>
+                    <td><input type="text" name="PhnNum" id="PhnNum" placeholder="Enter your phone number" required></td>
+                </tr>
+                <tr>
+                    <td><label for="DOB">Date Of Birth:</label></td>
+                    <td><input type="text" name="DOB" id="DOB" placeholder="Enter your date of birth" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male"/>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender" value="other"/>
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="Department">Department:</label></td>
+                    <td>
+                        <select id="Department" name="Department">
+                            <option value="Choose your Department" selected>Choose your Department</option>
+                            <option value="CSE">CSE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="BBA">BBA</option>
+                            <option value="English">English</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Semester">Semester:</label></td>
+                    <td>
+                        <select id="Semester" name="Semester">
+                            <option value="Choose your Semester" selected>Choose your Semester</option>
+                            <option value="1st Semester">1st Semester</option>
+                            <option value="2nd Semester">2nd Semester</option>
+                            <option value="3rd Semester">3rd Semester</option>
+                            <option value="4th Semester">4th Semester</option>
+                            <option value="5th Semester">5th Semester</option>
+                            <option value="6th Semester">6th Semester</option>
+                            <option value="7th Semester">7th Semester</option>
+                            <option value="8th Semester">8th Semester</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <table>
+                <tr>
+                    <td><label>Programming Languages:</label></td>
+                    <td>
+                        <input type="checkbox" id="C" name="Languages" value="C">
+                        <label for="C">C</label>
+
+                        <input type="checkbox" id="Cplus" name="Languages" value="C++">
+                        <label for="Cplus">C++</label>
+
+                        <input type="checkbox" id="Java" name="Languages" value="Java">
+                        <label for="Java">Java</label>
+
+                        <input type="checkbox" id="Python" name="Languages" value="Python">
+                        <label for="Python">Python</label>
+
+                        <input type="checkbox" id="JavaScript" name="Languages" value="JavaScript">
+                        <label for="JavaScript">JavaScript</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <table>
+                <tr>
+                    <td valign="top"><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your address.Not more than 100 characters."></textarea></td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="photo">Upload Photo:</label></td>
+                    <td><input type="file" id="photo" name="photo"></td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="comment">Comments/Suggestions:</label></td>
+                    <td><textarea id="comment" name="comment" rows="4" cols="40" placeholder="Enter your comments or suggestions.Not more than 200 characters."></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
