@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4{
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.main-header{
+    background: linear-gradient(135deg,#000f172a 0%, #1e293b 100%);
+    color: #f1f5f9;
+    padding: 1rem o;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, alpha0.3);
+}
+
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.College-name{
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(to right , #facc15, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-menu a{
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 0.2rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    color: #e2e8f0;
+}
+
+.nav-menu a:hover{
+    color: #facc15;
+    border-bottom-color: #facc15;
+}
+
+.welcome-section{
+    background: linear-gradient(145deg, #f1f5f9 0%,#e2e8f0 100%);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.welcome-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-content h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #0f172a;
+}
+
+.welcome-content p{
+    font-size: 1.25rem;
+    color: #334155;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.apply-btn{
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 0.9rem;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all o.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    border: none;
+    cursor: pointer;
+}
+
+.apply-btn:hover{
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.45);
+}
+
+.section-tittle{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0f172a;
+    position: relative;
+}
+
+.section-tittle ::after{
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    margin:  0.5rem auto 0;
+    border-radius: 4px;
+}
+
+.courses-section{
+    padding: 4rem 2rem;
+    background: #ffffff;
+}
+
+.course-cards{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.course-card{
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 2rem 1.8rem;
+    flex: 1 1 260px;
+    max-width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e9edf2;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.course-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #b9c7db;
+}
+
+.course-card h3{
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 0.05rem;
+}
+
+.course-card p{
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.badge{
+    display: inline-block;
+    background: #dbeafe;
+    color: #1e3a8a;
+}
+
